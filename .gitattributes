@@ -1,0 +1,9 @@
+# Store text files with LF line endings in the repository, whatever the OS.
+* text=auto eol=lf
+
+# Binary files that may be added later (models, images)
+*.keras binary
+*.h5    binary
+*.npz   binary
+*.png   binary
+*.jpg   binary

@@ -5,11 +5,13 @@ __pycache__/
 .venv/
 venv/
 env/
+.pytest_cache/
 
 # Data & model artifacts (too large / not for version control)
 data/
 *.keras
 *.h5
+*.npz
 *.png
 
 # OS / editor
@@ -17,3 +19,5 @@ data/
 .idea/
 .vscode/
 *.swp
+review/
+*.partial
