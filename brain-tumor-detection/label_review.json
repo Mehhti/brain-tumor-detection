@@ -1,0 +1,30 @@
+{
+  "description": "Manual label review, applied by train.py / cross_validate.py / ensemble.py before splitting. action: exclude | relabel (with \"label\": \"no\" or \"yes\") | keep. A decision applies to the image's whole duplicate group. These are NOT diagnoses: candidates came from confident out-of-fold disagreements of two independent models (MobileNetV2 and EfficientNetV2-B0); decisions are provisional and should be confirmed or changed by a qualified reader.",
+  "images": [
+    {
+      "path": "br35h/no/no1102.jpg",
+      "action": "exclude",
+      "reason": "Labelled 'no' but shows two round, strongly enhancing focal lesions (deep midline and occipital). Same scan as no384 / no1323 (different contrast) and no1281 (rotated 180 degrees). Excluded pending expert review rather than relabelled."
+    },
+    {
+      "path": "br35h/no/no384.jpg",
+      "action": "exclude",
+      "reason": "Same scan as no1102 (different contrast): visible enhancing focal lesions. Excluded pending expert review."
+    },
+    {
+      "path": "br35h/no/no1323.jpg",
+      "action": "exclude",
+      "reason": "Same scan as no1102 (different contrast): visible enhancing focal lesions. Excluded pending expert review."
+    },
+    {
+      "path": "br35h/no/no1281.jpg",
+      "action": "exclude",
+      "reason": "Same scan as no1102, rotated 180 degrees: visible enhancing focal lesions. Excluded pending expert review."
+    },
+    {
+      "path": "br35h/no/no534.jpg",
+      "action": "keep",
+      "reason": "Flagged by both models, but no focal lesion is visible; bright vessels from a different sequence. Treated as a model error, label kept."
+    }
+  ]
+}
